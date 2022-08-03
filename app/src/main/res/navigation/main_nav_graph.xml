@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/mainFragment">
+
+    <action
+        android:id="@+id/action_globalReturn"
+        app:destination="@id/mainFragment"/>
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.sine_app.view.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_selectServiceFragment"
+            app:destination="@id/selectServiceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectServiceFragment"
+        android:name="com.example.sine_app.view.SelectServiceFragment"
+        android:label="SelectServiceFragment"
+        tools:layout="@layout/select_service_fragment">
+        <action
+            android:id="@+id/action_selectServiceFragment_to_selectAttendanceFragment"
+            app:destination="@id/selectAttendanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectAttendanceFragment"
+        android:name="com.example.sine_app.view.SelectAttendanceFragment"
+        android:label="SelectAttendanceFragment"
+        tools:layout="@layout/select_attendance_fragment">
+        <action
+            android:id="@+id/action_selectAttendanceFragment_to_finishFragment"
+            app:destination="@id/finishFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finishFragment"
+        android:name="com.example.sine_app.view.FinishFragment"
+        android:label="FinishFragment"
+        tools:layout="@layout/finish_fragment"/>
+</navigation>

@@ -14,6 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/cardView_test"
         android:layout_width="@dimen/_250sdp"
@@ -25,10 +26,14 @@
         android:layout_marginBottom="@dimen/_250sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:backgroundTint="@color/primary"
-        android:clickable="true">
+        android:clickable="true"
+        android:focusable="true">
+
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false">
             <ImageView
                 android:id="@+id/img_teste"
                 android:layout_width="@dimen/_40sdp"
@@ -79,6 +84,7 @@
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
+
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/digitalView"
         android:layout_width="@dimen/_250sdp"
@@ -89,10 +95,13 @@
         app:layout_constraintRight_toRightOf="parent"
         app:cardCornerRadius="@dimen/_10sdp"
         android:backgroundTint="@color/primary"
-        android:clickable="true">
+        android:clickable="true"
+        android:focusable="true">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false">
             <ImageView
                 android:id="@+id/digital"
                 android:layout_width="@dimen/_40sdp"
@@ -133,6 +142,7 @@
 
             <ImageView
                 android:id="@+id/digitaltwoarrow"
+                app:tint="@color/white"
                 android:layout_width="40dp"
                 android:layout_height="25dp"
                 android:src="@drawable/arrow"
@@ -153,10 +163,13 @@
         android:layout_marginTop="@dimen/_250sdp"
         app:cardCornerRadius="@dimen/_10sdp"
         android:backgroundTint="@color/primary"
-        android:clickable="true">
+        android:clickable="true"
+        android:focusable="true">
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:clickable="false"
+            android:focusable="false">
             <ImageView
                 android:id="@+id/digital_3_image"
                 android:layout_width="@dimen/_40sdp"

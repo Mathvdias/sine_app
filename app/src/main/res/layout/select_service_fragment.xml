@@ -5,22 +5,28 @@
     android:background="@color/blue_color"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
         tools:context="">
         <ImageView
             android:layout_marginTop="133px"
             android:layout_gravity="center"
             android:layout_width="684px"
             android:layout_height="120px"
+            android:clickable="false"
+            android:focusable="false"
             android:src="@drawable/logo_sine"/>
         <ImageView
-            android:clickable="true"
             android:layout_marginTop="493px"
             android:layout_gravity="center"
             android:layout_width="220px"
             android:layout_height="220px"
+            android:clickable="false"
+            android:focusable="false"
             android:src="@drawable/ic_find"/>
         <TextView
             android:layout_width="wrap_content"
@@ -30,6 +36,8 @@
             android:textStyle="bold"
             android:text="@string/escolher"
             android:textColor="@color/white"
+            android:clickable="false"
+            android:focusable="false"
             android:textSize="46px" />
         <TextView
             android:layout_width="wrap_content"
@@ -38,12 +46,16 @@
             android:textSize="21px"
             android:textStyle="normal"
             android:layout_marginTop="10px"
+            android:clickable="false"
+            android:focusable="false"
             android:text="@string/clique"
             android:textColor="@color/white" />
         <ImageView
             android:layout_marginTop="400px"
             android:layout_gravity="center"
             android:layout_width="1080px"
+            android:clickable="false"
+            android:focusable="false"
             android:layout_height="360px"
             android:src="@drawable/sine_f"/>
     </LinearLayout>

@@ -5,26 +5,35 @@
     android:background="@color/primary"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
         tools:context="">
         <ImageView
             android:layout_marginTop="275px"
             android:layout_gravity="center"
             android:layout_width="684px"
             android:layout_height="120px"
+            android:clickable="false"
+            android:focusable="false"
             android:src="@drawable/logo"/>
         <ImageView
             android:layout_marginTop="80px"
             android:layout_gravity="center"
             android:layout_width="338px"
             android:layout_height="465px"
+            android:clickable="false"
+            android:focusable="false"
             android:src="@drawable/ic_icon_sine"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"
             android:layout_marginTop="75px"
             android:text="@string/trabalho_empreendedorismo_e_inova_o"
             android:textColor="@color/white" />
@@ -32,12 +41,16 @@
             android:layout_width="wrap_content"
             android:layout_height="22dp"
             android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"
             android:layout_marginTop="148px"
             android:text="@string/toque_para_iniciar"
             android:textColor="@color/white" />
         <ImageView
             android:layout_marginTop="240px"
             android:layout_gravity="center"
+            android:clickable="false"
+            android:focusable="false"
             android:layout_width="682px"
             android:layout_height="445px"
             android:src="@drawable/ic_frufru_login"/>

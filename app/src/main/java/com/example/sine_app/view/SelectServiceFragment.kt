@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.sine_app.R
 import com.example.sine_app.databinding.SelectServiceFragmentBinding
 
 class SelectServiceFragment : Fragment() {
@@ -18,5 +20,13 @@ class SelectServiceFragment : Fragment() {
     ): View {
         binding = SelectServiceFragmentBinding.inflate(layoutInflater)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.linear.setOnClickListener {
+            findNavController().navigate(R.id.action_selectServiceFragment_to_selectAttendanceFragment)
+        }
     }
 }

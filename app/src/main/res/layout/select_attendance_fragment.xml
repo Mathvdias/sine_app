@@ -132,7 +132,6 @@
                 />
 
             <ImageView
-                android:tintMode="@color/digitaltwo"
                 android:id="@+id/digitaltwoarrow"
                 android:layout_width="40dp"
                 android:layout_height="25dp"

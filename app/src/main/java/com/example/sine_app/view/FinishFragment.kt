@@ -1,10 +1,13 @@
 package com.example.sine_app.view
 
 import android.os.Bundle
+import android.os.Handler
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.example.sine_app.R
 import com.example.sine_app.databinding.FinishFragmentBinding
 
 class FinishFragment : Fragment() {
@@ -18,5 +21,13 @@ class FinishFragment : Fragment() {
     ): View {
         binding = FinishFragmentBinding.inflate(layoutInflater)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        Handler().postDelayed({
+            findNavController().navigate(R.id.action_globalReturn)
+        }, 5000)
     }
 }

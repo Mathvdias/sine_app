@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="">
+        <ImageView
+            android:layout_marginTop="133px"
+            android:layout_gravity="center"
+            android:layout_width="684px"
+            android:layout_height="120px"
+            android:src="@drawable/logo_sine"/>
+        <ImageView
+            android:clickable="true"
+            android:layout_marginTop="493px"
+            android:layout_gravity="center"
+            android:layout_width="220px"
+            android:layout_height="220px"
+            android:src="@drawable/ic_find"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="75px"
+            android:textStyle="bold"
+            android:text="@string/escolher"
+            android:textColor="@color/white"
+            android:textSize="46px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:textSize="21px"
+            android:textStyle="normal"
+            android:layout_marginTop="10px"
+            android:text="@string/clique"
+            android:textColor="@color/white" />
+        <ImageView
+            android:layout_marginTop="400px"
+            android:layout_gravity="center"
+            android:layout_width="1080px"
+            android:layout_height="360px"
+            android:src="@drawable/sine_f"/>
+    </LinearLayout>
+</ScrollView>

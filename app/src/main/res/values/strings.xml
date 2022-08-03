@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sine_app</string>
+    <string name="trabalho_empreendedorismo_e_inova_o">Trabalho, Empreendedorismo e Inovação</string>
+    <string name="toque_para_iniciar">Toque para iniciar</string>
+    <string name="escolher">Escolher serviço</string>
+    <string name="clique">Clique para escolher o serviço</string>
+
+</resources>

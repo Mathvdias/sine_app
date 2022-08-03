@@ -5,13 +5,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.sine_app.R
 import com.example.sine_app.databinding.FragmentMainBinding
+import com.example.sine_app.viewmodel.PostViewModel
 
 class MainFragment : Fragment() {
 
     lateinit var binding: FragmentMainBinding
+
+    lateinit var viewModel : PostViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,6 +29,10 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewModel = ViewModelProvider(requireActivity())[PostViewModel::class.java]
+
+//        viewModel.doPost()
 
         binding.linear.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_selectServiceFragment)

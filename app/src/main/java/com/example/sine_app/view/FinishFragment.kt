@@ -27,7 +27,11 @@ class FinishFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         Handler().postDelayed({
-            findNavController().navigate(R.id.action_globalReturn)
+            try {
+                findNavController().navigate(R.id.action_globalReturn)
+            } catch (e : Exception){
+
+            }
         }, 5000)
     }
 }

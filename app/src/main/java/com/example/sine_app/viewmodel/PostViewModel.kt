@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.sine_app.model.ClientAPI
+import com.example.sine_app.model.Ticket
 import kotlinx.coroutines.launch
 
 class PostViewModel() : ViewModel() {
@@ -14,7 +15,7 @@ class PostViewModel() : ViewModel() {
     fun doPost(){
         viewModelScope.launch {
             try {
-                network.sendRequisition("12")
+                network.sendRequisition(Ticket(47))
             } catch (e : Exception){
                 Log.e("Erro", e.message.toString())
             }

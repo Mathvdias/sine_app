@@ -1,5 +1,5 @@
 package com.example.sine_app.model
 
-class Ticket {
-    val ticket : String = ""
+class Ticket (val  id : Int){
+    val ticket : Int = id
 }

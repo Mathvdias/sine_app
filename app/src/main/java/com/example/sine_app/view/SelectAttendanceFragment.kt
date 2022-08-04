@@ -48,11 +48,12 @@ class SelectAttendanceFragment : Fragment() {
 
                         ext.printText("\n\n\n")
                         ext.setAlignMode(1)
-                        ext.printText("Ingresso:  Principal")
+                        ext.printText("CARTEIRA DIGITAL")
                         ext.printText("\n")
-                        ext.printQrCode("123456789", 8, 1)
+                        ext.setFontZoom(2, 2)
+                        ext.printText("2")
                         ext.printText("\n")
-                        ext.printText("123456789")
+                        ext.printText("ACOMPANHE A FILA NO PAINEL DIGITAL")
                         ext.printText("\n\n\n\n\n\n\n\n")
                         ext.cutPaper(1, 1)
                     }

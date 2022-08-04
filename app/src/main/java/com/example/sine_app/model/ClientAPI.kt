@@ -12,8 +12,7 @@ class ClientAPI() {
 
         private var retrofitInstance : Retrofit? = null
 
-        // Inserir a url base aqui
-        private val BASE_URL = "https://pokeapi.co/api/v2/"
+        private val BASE_URL = "https://sine-dev.conecthus.org.br/api/v1/"
 
         @JvmName("getRetrofitInstance1")
         private fun getRetrofitInstance() : Retrofit{

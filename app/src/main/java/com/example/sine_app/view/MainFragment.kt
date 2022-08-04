@@ -32,7 +32,7 @@ class MainFragment : Fragment() {
 
         viewModel = ViewModelProvider(requireActivity())[PostViewModel::class.java]
 
-//        viewModel.doPost()
+        viewModel.doPost()
 
         binding.linear.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_selectServiceFragment)

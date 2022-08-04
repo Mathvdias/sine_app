@@ -14,7 +14,7 @@ class PostViewModel() : ViewModel() {
     fun doPost(){
         viewModelScope.launch {
             try {
-//                network.sendRequisition(2)
+                network.sendRequisition("12")
             } catch (e : Exception){
                 Log.e("Erro", e.message.toString())
             }

@@ -6,7 +6,6 @@ import retrofit2.http.POST
 
 interface ServiceAPI {
 
-    //Inserir a rota aqui
-//    @POST("")
-//    suspend fun sendRequisition( @Body id : Int) : Response</*colocar o objeto da resposta*/>
+   @POST("ticket")
+    suspend fun sendRequisition( @Body ticket: String) : Response<Ticket>
 }

@@ -26,18 +26,20 @@
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:layout_marginTop="46px"
+            android:textSize="46px"
             android:textStyle="bold"
             android:text="Impressão Realizada Com Sucesso!"
             android:textColor="@color/white" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="22dp"
+            android:layout_height="32dp"
             android:layout_gravity="center"
+            android:layout_marginTop="5sp"
+            android:text="Acompanhe a fila pelo painel digital."
+            android:textColor="@color/white"
             android:textSize="30px"
-            android:textStyle=""
-            android:layout_marginTop="10px"
-            android:text="@string/clique"
-            android:textColor="@color/white" />
+            android:textStyle="" />
         <ImageView
             android:layout_marginTop="350px"
             android:layout_gravity="center"

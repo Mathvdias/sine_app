@@ -30,6 +30,7 @@
             android:src="@drawable/ic_icon_sine"/>
         <TextView
             android:layout_width="wrap_content"
+            android:textSize="@dimen/_10sdp"
             android:layout_height="match_parent"
             android:layout_gravity="center"
             android:clickable="false"
@@ -37,15 +38,17 @@
             android:layout_marginTop="75px"
             android:text="@string/trabalho_empreendedorismo_e_inova_o"
             android:textColor="@color/white" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="22dp"
+            android:layout_height="39dp"
             android:layout_gravity="center"
+            android:layout_marginTop="148px"
             android:clickable="false"
             android:focusable="false"
-            android:layout_marginTop="148px"
             android:text="@string/toque_para_iniciar"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"
+            android:textSize="25sp" />
         <ImageView
             android:layout_marginTop="240px"
             android:layout_gravity="center"

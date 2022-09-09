@@ -12,10 +12,10 @@ class PostViewModel() : ViewModel() {
 
     val network = ClientAPI.getService()
 
-    fun doPost(){
+   suspend fun doPost(ticket: Int){
         viewModelScope.launch {
             try {
-                network.sendRequisition(Ticket(75))
+                network.sendRequisition(Ticket(ticket))
             } catch (e : Exception){
                 Log.e("Erro", e.message.toString())
             }

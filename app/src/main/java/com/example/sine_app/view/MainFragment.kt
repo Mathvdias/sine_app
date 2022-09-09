@@ -9,7 +9,10 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.example.sine_app.R
 import com.example.sine_app.databinding.FragmentMainBinding
+import com.example.sine_app.model.Ticket
 import com.example.sine_app.viewmodel.PostViewModel
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainFragment : Fragment() {
 
@@ -30,12 +33,19 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        viewModel = ViewModelProvider(requireActivity())[PostViewModel::class.java]
+//        viewModel = ViewModelProvider(requireActivity())[PostViewModel::class.java]
 
-        viewModel.doPost()
+
+//       GlobalScope.launch {
+//           sendTicket()
+//       }
 
         binding.linear.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_selectServiceFragment)
         }
     }
+
+//    suspend fun sendTicket(){
+//        viewModel.doPost(25)
+//    }
 }
